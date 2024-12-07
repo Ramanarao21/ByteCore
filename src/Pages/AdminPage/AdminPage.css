@@ -1,0 +1,88 @@
+/* Main container */
+.admin-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 80vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  .admin-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Project card */
+  .project-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Project title */
+  .project-title {
+    font-size: 1.5rem;
+    color: #6c63ff;
+    margin-bottom: 10px;
+  }
+  
+  /* Project information */
+  .project-info {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 5px 0;
+  }
+  
+  .project-info strong {
+    color: #333;
+  }
+  
+  /* No projects available */
+  .no-projects {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #999;
+  }
+  .cards-con{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    gap: 13px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .admin-page-container {
+      padding: 15px;
+    }
+  
+    .admin-heading {
+      font-size: 1.8rem;
+    }
+  
+    .project-title {
+      font-size: 1.3rem;
+    }
+  
+    .project-info {
+      font-size: 0.9rem;
+    }
+  }
+  

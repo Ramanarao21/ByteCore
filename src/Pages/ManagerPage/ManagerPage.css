@@ -1,0 +1,35 @@
+.manager-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .project-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: calc(45% - 20px); 
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .project-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .project-card h2 {
+    margin-top: 0;
+  }
+  
+  .project-card p {
+    margin: 5px 0;
+  }
+  .project-name-manager{
+    color: #6c63ff;
+  }

@@ -1,0 +1,165 @@
+.main-container{
+    background-image: url('/backgroundimg.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .card{
+    display: flex;
+    background-color :#f9f9f9;
+    padding: 50px;
+    border-radius: 20px;
+    width: 55vw;
+    height: 60vh;
+  }
+
+.login-form{
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-form h2{
+    font-weight: 600;
+    font-family: "Chakra Petch", sans-serif;
+    color: #6c63ff;
+}
+.login-form input {
+    padding: 8px 10px;
+    outline: none; /* Prevents default focus outline */
+    border: 1px solid #CCCCCC; /* Add a subtle border */
+    border-radius: 7px;
+    background-color: #F7F7F7; /* Light gray for input background */
+    color: #333333; /* Dark gray for input text */
+    transition: all 0.3s ease; /* Smooth transition for hover/focus effects */
+}
+
+
+.login-form input::placeholder {
+    color: #AAAAAA; 
+}
+
+
+.login-form input:hover {
+    background-color: #EDEDED; 
+}
+
+
+.login-form input:focus {
+    background-color: #FFFFFF; /* White background for better focus */
+    border: 1px solid #6c63ff; /* Blue border on focus */
+    box-shadow: 0 0 3px #6c63ff; /* Soft blue glow */
+}
+
+.login-form button{
+    padding: 10px;
+    color: white;
+    background-color: #6c63ff;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+}
+.login-form button:hover{
+    background-color: #5c56d6;
+}
+.login-term{
+    display: flex;
+    gap: 7px;
+}
+.login-term p{
+    font-size: 14px;
+    color: #6c63ff;
+}
+.login-term input{
+    cursor: pointer;
+}
+.login-account{
+    font-size: 15px;
+    padding: 5px;
+    color: #6c63ff;
+}
+.login-account span{
+    cursor: pointer;
+    color: #6c63ff;
+}
+
+.login-account span:hover{
+    cursor: pointer;
+    color:#2d2a5f;
+}
+
+.card-img{
+    height: 50vh;
+    width: 30vw;
+    border-radius: 10px;
+}
+.hr{
+    background-color:gray;
+    height: 1px;
+    margin-bottom: 2px;
+}
+
+
+.role-select{
+    background-color:white;
+    border: 0px;
+    font-size: 15px;
+    height: 30px;
+    border: 2px solid gray;
+    padding: 2px;
+}
+
+.login-form select {
+    padding: 8px 10px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 7px;
+    background-color: #F7F7F7; /* Background for the dropdown */
+    color: #333333; /* Text color for options */
+    appearance: none; /* Removes default arrow styling */
+    -moz-appearance: none; /* Firefox-specific */
+    -webkit-appearance: none; /* WebKit-specific */
+    transition: all 0.3s ease;
+    
+   
+}
+
+/* Add a custom arrow indicator */
+.login-form select:after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+    color: #333333;
+
+}
+
+/* Change hover and focus styles */
+.login-form select:hover {
+    background-color: #EDEDED; /* Light gray on hover */
+}
+
+.login-form select:focus {
+    border: 1px solid #6c63ff; /* Blue border on focus */
+    background-color: #FFFFFF; /* White background for better focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Change selected option color */
+.login-form select option {
+    background-color: #F7F7F7; /* Background for dropdown options */
+    color: #333333; /* Text color */
+}
+
+.login-form select option:hover {
+    background-color: #D3D3D3; /* Highlight for hovered option */
+}
